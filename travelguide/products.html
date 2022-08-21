@@ -1,0 +1,321 @@
+<html>
+<h1 style="color:2196F3;font-size:300%;text-align:center;font-family:Arial">ΤΑΞΙΔΙΩΤΙΚΟΣ ΟΔΗΓΟΣ ΛΕΥΚΑΔΑΣ </h1>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="http://aromalefkadas.gr/wp-content/uploads/2016/09/36-2.jpg" style="width:100%">
+  <div class="text">Νικιάνα</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://s.kathimerini.gr/resources/2015-06/lefkada-thumb-large.jpg" style="width:100%">
+  <div class="text">Πόρτο Κατσίκι</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="http://www.villa-matula.gr/images/resource/lefkada-city.jpg" style="width:100%">
+  <div class="text">Πόλη Λευκάδας</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.topnav {
+  overflow: auto;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+</style>
+</head>
+<title> Επιχειρήσεις </title>
+<body>
+<div class="topnav">
+  <a href="index.html">Αρχική Σελίδα</a>
+  <a href="shop.html">Παραλίες</a>
+  <a class="active" href="products.html">Επιχειρήσεις</a>
+  <a href="landmark.html">Αξιοθέατα - Δραστηριότητες</a>
+  <a href="contact.html">Επικοινωνία</a>
+  </div>
+</div>
+
+<div style="padding-left:16px">
+</div>
+<p style="font-family:Arial;text-align:left">Η Λευκάδα διαθέτει πανέμορφη φύση, μαγευτικές παραλίες και πλούσια πολιτιστική παράδοση. 
+Για όσους αποφασίσουν να επισκεφτούν τη Λευκάδα διατίθεται ένα οργανωμένο δίκτυο τουριστικών υπηρεσιών που μπορεί να προσφέρει άνετες και αξέχαστες διακοπές.Μερικές από αυτές είναι:</p>
+<ul style="list-style-type:disc;font-size:125%">
+<li><a style="color:2196F3;" href="#hotels">Διαμονή - Καταλύματα</a></li>
+<li><a style="color:2196F3;" href="#food">Εστίαση - Φαγητό</a></li>
+<li><a style="color:2196F3;" href="#fun">Διασκέδαση</a></li>
+</ul>
+<table style="font-family:Arial;width:100%;align:center;background-color:ddd;">
+	<tr style="color:2196F3;height:40">
+			<th>EΠΙΧΕΙΡΗΣΗ</th>
+			<th>ΚΑΤΗΓΟΡΙΑ</th>
+			<th>ΤΗΛΕΦΩΝΟ ΕΠΙΚΟΙΝΩΝΙΑΣ</th>
+	</tr>
+	<tr>
+		<th><p id="hotels"><a style="color:2196F3;" href="product_details.html"target="blank">Andriatica Hotel</a></th>
+		<th>Διαμονή - Καταλύματα</th>
+		<th>2645071520</th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="http://www.thalero.gr/"target="_blank">Thalero</a></th>
+		<th>Διαμονή - Καταλύματα</th>
+		<th>2645071614 </th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="http://www.hotelpegasos.gr/"target="_blank">Πήγασος</a></th>
+		<th>Διαμονή - Καταλύματα</th>
+		<th>2645072138</th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="https://hotelirida.gr/"target="_blank">Ίριδα</a></th>
+		<th>Διαμονή - Καταλύματα</th>
+		<th>2645023026</th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="http://www.verginastar.gr/el/"target="_blank">Vergina Star</a></th>
+		<th>Διαμονή - Καταλύματα</th>
+		<th>2645071380</th>
+	</tr>
+	<tr>
+		<th><p id="food"><a style="color:2196F3;" href="http://www.verginastar.gr/el/"target="_blank">Νήρικος</a></th>
+		<th>Εστίαση - Φαγητό</th>
+		<th>2645071270</th>
+	</tr
+	<tr>
+		<th><a style="color:2196F3;" href="https://www.facebook.com/12gods/?fref=ts"target="_blank">12 Θεοί</a></th>
+		<th>Εστίαση - Φαγητό</th>
+		<th>2645031880</th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="https://mammamiagreektaverna.gr/"target="_blank">Mamma Mia </a></th>
+		<th>Εστίαση - Φαγητό</th>
+		<th>2645093102</th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="https://www.facebook.com/%CE%A8%CE%B1%CF%81%CE%BF%CF%84%CE%B1%CE%B2%CE%AD%CF%81%CE%BD%CE%B1-%CE%BF-%CE%9E%CE%BF%CF%8D%CF%81%CE%B1%CF%82-322340447948828/"target="_blank">Ο Ξούρας </a></th>
+		<th>Εστίαση - Φαγητό</th>
+		<th>2645071312</th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="https://www.facebook.com/margaritalefkada/"target="_blank">Margarita</a></th>
+		<th>Εστίαση - Φαγητό</th>
+		<th>2645022232</th>
+	</tr>
+	<tr>
+		<th><p id="fun"><a style="color:2196F3;" href="https://www.facebook.com/Barbarossa-%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%AC%CE%B4%CE%B9%CE%BA%CE%BF-818422518226831/"target="_blank">Barbarosa Ελληνάδικο</a></th>
+		<th>Διασκέδαση</th>
+		<th>2645023568</th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="https://www.facebook.com/lagoon.lag/"target="_blank">Lagoon</a></th>
+		<th>Διασκέδαση</th>
+		<th>2645021532</th>
+		
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="https://www.facebook.com/%CE%98%CE%B5%CE%B1-1653153021674164/"target="_blank">Θέα</a></th>
+		<th>Διασκέδαση</th>
+		<th>2645095490</th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="https://www.facebook.com/KarmaLefkada/"target="_blank">The Karma</a></th>
+		<th>Διασκέδαση</th>
+		<th>2645023623</th>
+	</tr>
+	<tr>
+		<th><a style="color:2196F3;" href="https://www.facebook.com/JOY-1466076690295888/"target="_blank">JOY</a></th>
+		<th>Διασκέδαση</th>
+		<th>2645024386</th>
+	</tr>
+<table>
+</body>
+</html>

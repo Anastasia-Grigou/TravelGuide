@@ -1,0 +1,326 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<h1 style="color:2196F3;font-size:300%;text-align:center;font-family:Arial">ΤΑΞΙΔΙΩΤΙΚΟΣ ΟΔΗΓΟΣ ΛΕΥΚΑΔΑΣ </h1>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="http://aromalefkadas.gr/wp-content/uploads/2016/09/36-2.jpg" style="width:100%">
+  <div class="text">Νικιάνα</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://s.kathimerini.gr/resources/2015-06/lefkada-thumb-large.jpg" style="width:100%">
+  <div class="text">Πόρτο Κατσίκι</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="http://www.villa-matula.gr/images/resource/lefkada-city.jpg" style="width:100%">
+  <div class="text">Πόλη Λευκάδας</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.topnav {
+  overflow: auto;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="index.html">Αρχική Σελίδα</a>
+  <a href="shop.html">Παραλίες</a>
+  <a href="products.html">Επιχειρήσεις</a>
+  <a class="active" href="landmark.html">Αξιοθέατα - Δραστηριότητες</a>
+  <a href="contact.html">Επικοινωνία</a>
+  </div>
+<div style="padding-left:16px">
+</div>
+	<head>
+	<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+	<head>
+		<title>Αξιοθέατα - Δραστηριότητες</title>
+	</head>
+	<body style="font-family:Arial">
+		</br>
+		<table style="font-family:Arial;width:100%;align:center;background-color:ddd;font-size:25">
+			<tr>
+				<td  align="center" colspan="2" height="40"style='color:2196F3;'><b>Αξιοθέατα</b>
+			</tr>
+			<tr>
+				<td><b align="center" style="color:2196F3;">Κάστρο Αγίας Μαύρας</b><br> Στην είσοδο της Λευκάδας, κοντά στην Αμμόγλωσσα, υψώνεται το εντυπωσιακό κάστρο της Αγίας Μαύρας, πρότυπο οχυρωματικής αρχιτεκτονικής του Μεσαίωνα.</br></td>
+				<td><a href= "http://www.greekguide.com/gr/lefkada/castle-of-agia-mavra/e/941139488975" target="_blank"><img src= "http://data1a.greekguide.com/c/900x599-0/companies/941/139488975_1444727868.jpg"
+				style="width:500px;height:250px;"></a>
+				</td>
+			</tr>
+			<tr>
+				<td><b align="center" style="color:2196F3;">Ξύλινη Γέφυρα</b><br>Το σήμα κατατεθέν της πόλης της Λευκάδας, περιβάλλεται από μια λιμνοθάλασσα.</br></td>
+				<td><a href= "https://mygreekholiday.gr/4-articles/item/1074-lefkada-romantismos-kai-diaskedasi-sti-mikri-venetia-tou-ioniou-vid%5C" target="_blank"><img src= "http://aromalefkadas.gr/wp-content/uploads/2016/11/1-%CE%91%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF.jpg"
+				style="width:500px;height:250px;"></a>
+				</td>
+			</tr>
+			<tr>
+				<td><b align="center" style="color:2196F3;">Φάρος Δουκάτο</b><br>Ο Φάρος είναι κτισμένος στη θέση όπου βρισκόταν ο ναός του Απόλλωνα Λευκάτα.</br></td>
+				<td><a href= "http://www.faroi.com/gr/dukato_gr.htm" target="_blank"><img src= "http://data1a.greekguide.com/c/600x400-0/companies/874/139488999_1444727852.jpg"
+				style="width:500px;height:250px;"></a>
+				</td>
+			</tr>
+			<tr>
+				<td><b align="center" style="color:2196F3;">Ναός του Απόλλωνα</b><br>Στην αρχαιότητα το ιερό του Λευκάτα Απόλλωνα ήταν το πιο γνωστό της Λευκάδας και φημισμένο σ’ όλον τον Ελληνορωμαϊκό κόσμο.</br></td>
+				<td><a href= "http://aromalefkadas.gr/%CE%BB%CE%B5%CF%85%CE%BA%CE%AC%CF%84%CE%B1%CF%82-%CE%BF-%CE%B9%CE%B5%CF%81%CF%8C%CF%82-%CE%B2%CF%81%CE%AC%CF%87%CE%BF%CF%82-%CF%84%CE%B7%CF%82-%CE%BB%CE%B5%CF%85%CE%BA%CE%AC%CE%B4%CE%B1/" target="_blank"><img src= "http://aromalefkadas.gr/wp-content/uploads/2014/06/73.jpg"
+				style="width:500px;height:250px;"></a>
+				</td>
+			</tr>
+			<tr>
+				<td><b align="center" style="color:2196F3;">Καταρράκτες στο Νυδρί</b><br> Είναι το σημαντικότερο φυσικό αξιοθέατο του νησιού. </br></td>
+				<td><a href= "http://aromalefkadas.gr/%CE%BF%CE%B9-%CE%BA%CE%B1%CF%84%CE%B1%CF%81%CF%81%CE%AC%CE%BA%CF%84%CE%B5%CF%82-%CF%84%CE%BF%CF%85-%CE%B4%CE%B7%CE%BC%CE%BF%CF%83%CE%AC%CF%81%CE%B9-%CF%83%CF%84%CE%BF-%CE%BD%CF%85%CE%B4%CF%81%CE%AF/" target="_blank"><img src="https://kataraktes.files.wordpress.com/2009/09/dsc00911.jpg?w=500"
+				style="width:500px;height:450px;"></a>
+				</td>
+			</tr>
+			<tr>
+				<td><b align="center" style="color:2196F3;">Σπήλαιο Παπανικολή</b><br>Το μεγαλύτερο και πιο εντυπωσιακό θαλάσσιο σπήλαιο ανατολικά της Λευκάδας στο Μεγανήσι.</br></td>
+				<td><a href= "https://golefkas.gr/spilaio-papanikoli-sto-meganisi-mia-spilia-gia-makrovoytia/" target="_blank"><img src= "http://aromalefkadas.gr/wp-content/uploads/2014/07/papanikoli.jpg"
+				style="width:500px;height:250px;"></a>
+				</td>
+			</tr>
+			<tr>
+				<td><b align="center" style="color:2196F3;">Φαράγγι Μέλισσας</b><br>Παλιά γεφύρια και νερόμυλοι, σπηλιές και πηγές με κρυστάλλινα νερά συνθέτουν το φαράγγι της Μέλισσας.</br></td>
+				<td><a href= "http://aromalefkadas.gr/%CF%86%CE%B1%CF%81%CE%AC%CE%B3%CE%B3%CE%B9-%CE%BC%CE%AD%CE%BB%CE%B9%CF%83%CF%83%CE%B1%CF%82-%CE%AD%CE%BD%CE%B1-%CE%B4%CE%B9%CE%B1%CE%BC%CE%AC%CE%BD%CF%84%CE%B9-%CF%83%CF%84%CE%B7%CE%BD/" target="_blank"><img src= "http://aromalefkadas.gr/wp-content/uploads/2014/04/DSCN2442.jpg"
+				style="width:500px;height:250px;"></a>
+				</td>
+			</tr>
+		</table>
+		<br>
+		
+		<h2 align='center'><b  align="center" style="color:2196F3;font-size:25">Δραστηριότητες</b></h2>
+		<p align='left'>Από την πρώτη κιόλας στιγμή μπορείτε να βρείτε χιλιάδες πράγματα να κάνετε στο νησί. Αν είστε εθισμένοι στη δράση ή λάτρεις της χαλάρωσης να είστε σίγουροι πως στη Λευκάδα υπάρχουν πολλές επιλογές σε αθλητικές δραστηριότητες ή εκδρομές για ανθρώπους κάθε ηλικίας.</p>
+			<br>
+			<h3><a style="color:2196F3;" href="http://ionian-yachts.gr/" target="_blank">Ενοικιάσεις σκαφών - Περιηγήσεις με σκάφος </h3></a>
+			<img src="https://scontent.fath5-1.fna.fbcdn.net/v/t1.0-9/2941_152060254950494_497863186_n.jpg?_nc_cat=103&_nc_ht=scontent.fath5-1.fna&oh=7bc5a54b148a3efd83b1ff805b6f7645&oe=5C9E867C">
+			<p>Από τα πολυάριθμα λιμάνια της Λευκάδας υπάρχει η δυνατότητα ενοικίασης σκαφών αναψυχής που επιτρέπουν στον επισκέπτη να εξερευνήσει πολλες παραλίες που είναι προσβάσιμες μ'ονο απο θάλασσα καθώς και τα μικρότερα νησάκια στα ανατολικά του νησιού.</p>
+			<br>
+			<h3><a style="color:2196F3;" href="https://www.nole.gr/index.php" target="_blank">Ναυτικός Όμιλος Λευκάδας</h3></a>
+			<img src="https://www.nole.gr/images/531410_133129963484996_285267112_n.jpg">
+			<p> Ναυτικός  Όμιλος Λευκάδας δραστηριοποιείται στο νησί ήδη από το 2002. Είναι αθλητικό, μη κερδοσκοπικό σωματείο, 
+			ενεργό μέλος της Ελληνικής Ιστιοπλοϊκής  Ομοσπονδίας και αναγνωρισμένο από τη Γενική Γραμματεία Αθλητισμού.
+			 Οι τομείς που δραστηριοποιείται προς το παρόν ο Ναυτικός  Όμιλος Λευκάδας είναι οι εξής:
+			 <br>1) Ιστιοπλοΐα Τριγώνου με σκάφη ολυμπιακών κλάσεων όπου με αυτά μπορούν να πάρουν μέρος σε αγώνες ή να ασκηθούν παιδιά, νεαροί αθλητές και ενήλικοι.</br>
+			 <br>2) Ιστιοπλοΐα Ανοικτής Θάλασσας για τους ενήλικες</br></p>
+			<br>
+			<h3><a style="color:2196F3;"href="http://www.lefkadaslowguide.gr/business/activities/sports/sea-sports/" target="_blank">Θαλάσσια Sport - Ιστιοσανίδα (wind surfing) - Kitesurfing - Aλεξίπτωτο πλαγιάς</h3></a>
+			<img src="https://golefkas.gr/wp-content/uploads/cache/images/2018/09/winsurf_vassiliki/winsurf_vassiliki-2795157555.png" style="width:600px;height:350px;" >
+			<img src="http://hotelsline.com/1/agiosioannis1.jpg" style="width:600px;height:300px;">
+			<img src="http://hellas-beach.gr/wp-content/uploads/2015/07/%CE%9B%CE%B5%CF%85%CE%BA%CE%AC%CE%B4%CE%B1-%CE%9A%CE%AC%CE%B8%CE%B9%CF%83%CE%BC%CE%B1-6.jpg" style="width:600px;height:250px;">
+			<p>Οι παραλίες της Βασιλικής και του Αϊ Γιάννη είναι δύο από τις καλύτερες παγκοσμίως για wind surfing. Για όσους προτιμούν το 
+			kitesurfing, η παραλία Μύλοι, δίπλα στην πόλη της Λευκάδας είναι ιδανική.
+			Αν είστε πιο τολμηροί, με το αλεξίπτωτο πλαγιάς θα απολαύσετε μία αξέχαστη πτήση και μία συναρπαστική προσγείωση στο 
+			Κάθισμα, μία από τις ωραιότερες παραλίες. Ή, ακόμη, μπορείτε να πετάξετε με τα υπερελαφρά αεροπλάνα του Ομίλου
+			Αεραθλητών Λευκάδας.</p>
+			<br>
+			<h3><a style="color:2196F3;" href="http://www.lefkasdivingcenter.gr/" target="_blank">Καταδύσεις</h3></a>
+			<img src="http://www.lefkasdivingcenter.gr/images/photos/7194808995891b6341dfe28.01606014.jpg">
+			<p> Ο βυθός αποτελεί ένα υπέροχο τοπίο εξερεύνησης και χαρίζει μοναδικές εικόνες και εμπειρίες, όμως είναι απαραίτητη 
+			η έμπειρη καθοδήγηση και ο κατάλληλος εξοπλισμός. Στη Λευκάδα υπάρχουν οργανωμένα καταδυτικά κέντρα που δραστηριοποιούνται
+			στη Βασιλική, το  Νυδρί και τη Νικιάνα και δίνουν τη δυνατότητα στον ενδιαφερόμενο να παρακολουθήσει μαθήματα για 
+			ερασιτεχνική και επαγγελματική ενασχόληση με το άθλημα.</p>
+			<br>
+			<h3><a style="color:2196F3;" href="http://www.lefkadaslowguide.gr/business/activities/travel-excursions/cruises/" target="_blank">Κρουαζιέρα</h3></a>
+			<img src="https://golefkas.gr/wp-content/uploads/2015/04/krouaziera.jpg">
+			<p>Οι ημερήσιες κρουαζιέρες στη Λευκάδα αποτελούν αγαπημένη συνήθεια πολλών επισκεπτών του νησιού αφού τους 
+			δύνεται η ευκαιρεία να γνωρίσουν τα νησάκια, την ακτογραμμή της Λευκάδας και τις μαγευτικές παραλίες του νησιού.
+			</p>
+			<br>
+			<h3><a style="color:2196F3;" href="https://golefkas.gr/orini-lefkada/" target="_blank">Περιήγηση στα ορεινά χωριά της Λευκάδας</h3></a>
+			<img src="http://lefkada.gr/UserFiles/Image/photo_gallery/Cities%20and%20Villages/big/09.jpg">
+			<p>Η Λευκάδα έχει πολλά πανέμορφα και γραφικά χωριά. Η Καρυά, τα Ασπρογερακάτα, τα Λαζαράτα, το Σπανοχώρι και το
+			Πινακοχώρι αποτελούν μόνο λίγα απο τα χωριά που κρατάνε τον παραδοσιακό αρχιτεκτονικό χαρακτήρα. Εκκλησίες με μοναδικά
+			καμπαναριά, μύλοι ανέμου και νερού, πηγάδια, πηγές, μικροί ή μεγάλοι χείμαρροι πολυάριθμα μονοπάτια και διαδρομές  και 
+			υπέροχη θέα αποτελούν τα κύρια χαρακτηριστικά τους.
+			</p>
+			<br>
+	</html>
+			
+			
